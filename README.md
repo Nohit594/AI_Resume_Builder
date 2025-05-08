@@ -2,17 +2,18 @@
 
 This project is a full stack application featuring a Vite-powered React frontend and a Node.js (Express) backend.
 
+---
+
 ## 📁 Project Structure
 
+```
 root/
-│
-├── my-app/ # Frontend (React + Vite)
-│ └── ...
-│
-├── backend files # Backend (Controller, middleware, etc...)
-├── package.json # Backend package.json
+├── my-app/                  # Frontend (React + Vite)
+│   └── ...                 
+├── backend files            # Backend (Controllers, middleware, etc.)
+├── package.json             # Backend package.json
 └── README.md
-
+```
 
 ---
 
@@ -20,31 +21,32 @@ root/
 
 ### 📦 Backend Setup (Node.js / Express)
 
-1. Navigate to the root directory:
-   ```bash
-   cd RESUME BUILDER
+To get the backend up and running:
 
-2. Install dependencies::
-   ```bash
-   npm install
-   
-3. Start the Server:
-    ```bash
-    npm start
+```bash
+cd RESUME BUILDER
+npm install
+npm start
+```
 
-💻 Frontend Setup (Vite + React)
-1. Navigate to the frontend folder:
-   ```bash
-   cd my-app
+---
 
-3. Install dependencies:
-   ```bash
-   npm install
-5. Start the development server:
-   ```bash
-   npm run dev
+### 💻 Frontend Setup (Vite + React)
 
-🛠 Tech Stack
-Frontend: Vite, React, JavaScript Tailwind 
-Backend: Node.js
-Package Managers: npm
+To run the frontend development server:
+
+```bash
+cd my-app
+npm install
+npm run dev
+```
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Vite, React, JavaScript, Tailwind CSS  
+- **Backend:** Node.js (Express)  
+- **Package Manager:** npm  
+
+---
