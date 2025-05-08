@@ -1,0 +1,280 @@
+:root {
+  --primary-color: #3498db;
+  --primary-color-light: #3498db80;
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main Template Styles */
+.temp10-container {
+  display: flex;
+  font-family: var(--font-family);
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  color: #333;
+}
+
+.temp10-resume {
+  flex: 1;
+  max-width: 800px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.temp10-header {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.temp10-name {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #2c3e50;
+  letter-spacing: 0.5px;
+}
+
+.temp10-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.temp10-contact-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.temp10-contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.temp10-divider {
+  border: none;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--primary-color), transparent);
+  margin: 25px 0;
+}
+
+.temp10-section {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.temp10-section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #2c3e50;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--primary-color);
+  display: inline-block;
+}
+
+.temp10-summary-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.temp10-experience-item {
+  margin-bottom: 25px;
+}
+
+.temp10-experience-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.temp10-position {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.temp10-organization {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+.temp10-experience-meta {
+  font-size: 14px;
+  color: #7f8c8d;
+  display: flex;
+  gap: 15px;
+}
+
+.temp10-responsibilities {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #34495e;
+}
+
+.temp10-responsibilities li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.temp10-responsibilities li:before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.temp10-education-item {
+  margin-bottom: 25px;
+}
+
+.temp10-education-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.temp10-degree {
+  font-weight: 600;
+  font-size: 16px;
+  color: #2c3e50;
+}
+
+.temp10-institution {
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--primary-color);
+}
+
+.temp10-education-meta {
+  font-size: 14px;
+  color: #7f8c8d;
+  display: flex;
+  gap: 15px;
+}
+
+.temp10-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.temp10-skill-tag {
+  background-color: color-mix(in srgb, var(--primary-color) 10%, white);
+  color: var(--primary-color);
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.temp10-certifications {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.temp10-certifications li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.temp10-certifications li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.temp10-project-item {
+  margin-bottom: 20px;
+}
+
+.temp10-project-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.temp10-project-description {
+  font-size: 14px;
+  color: #34495e;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.temp10-project-tech {
+  font-size: 13px;
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .temp10-resume {
+    padding: 30px;
+    margin: 20px;
+    width: calc(100% - 40px);
+  }
+  
+  .temp10-experience-header,
+  .temp10-education-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .temp10-experience-meta,
+  .temp10-education-meta {
+    margin-top: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  .temp10-resume {
+    padding: 20px;
+    margin: 20px 10px 10px;
+    width: calc(100% - 20px);
+  }
+  
+  .temp10-name {
+    font-size: 24px;
+  }
+  
+  .temp10-title {
+    font-size: 16px;
+  }
+  
+  .temp10-contact-info {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+  
+  .temp10-section-title {
+    font-size: 16px;
+  }
+}
