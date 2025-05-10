@@ -14,7 +14,8 @@ const WithoutAi = () => {
     'https://miro.medium.com/v2/resize:fit:4800/format:webp/1*mAIfR-lj6YkUEI7AaP6CGg.jpeg';
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-300 via-indigo-300 to-white p-4 py-12 md:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-orange-400 via-emerald-400 to-white p-4 py-12 md:p-12">
+
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
